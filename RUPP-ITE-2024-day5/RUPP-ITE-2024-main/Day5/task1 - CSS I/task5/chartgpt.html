@@ -1,0 +1,32 @@
+Inline styles allow you to apply CSS directly to an HTML element using the style attribute. These styles are defined within the HTML tag itself, making them specific to that element. While convenient for quick or unique styling, inline styles have several drawbacks compared to external stylesheets.
+
+Syntax for Inline Styles:
+To apply an inline style, you use the style attribute within an HTML tag, followed by the CSS rules as a string. Here's an example:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline Styles Example</title>
+</head>
+<body>
+    <h1 style="color: red; text-align: center;">Welcome to Inline Styles Demo</h1>
+
+    <p style="color: green; font-size: 20px;">
+        This paragraph has an inline style that sets the text color to green and the font size to 20px.
+    </p>
+
+    <div style="background-color: lightgray; padding: 20px;">
+        <p style="color: blue;">
+            This is a nested paragraph inside a div, and its color is blue due to the inline style.
+        </p>
+        <button style="background-color: yellow; border: 1px solid black; padding: 10px;">
+            Click Me!
+        </button>
+    </div>
+
+    <p style="font-style: italic; text-align: right;">
+        This paragraph is aligned to the right and has italic text.
+    </p>
+</body>
+</html>

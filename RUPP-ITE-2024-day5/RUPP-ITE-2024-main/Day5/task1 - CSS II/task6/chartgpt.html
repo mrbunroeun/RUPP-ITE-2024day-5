@@ -1,0 +1,95 @@
+Components in CSS: Enhancing Code Reusability
+Components in CSS refer to reusable blocks of code that define the styles for specific elements or groups of elements. By creating components, you can avoid code duplication and make your CSS more modular, easier to maintain, and more scalable.
+
+Creating a Card Component with Sass
+SCSS
+// card.scss
+.card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-description {
+  font-size: 14px;
+  color: #666;
+}
+
+.card-button {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+Use code with caution.
+
+Compiled CSS Output
+CSS
+.card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-description {
+  font-size: 14px;
+  color: #666;
+}
+
+.card-button {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+Use code with caution.
+
+Structuring Components in a Sass Project
+You can organize your Sass components in a variety of ways, but a common approach is to create separate files for each component. For example, you could create a components folder and place the card.scss file within it.
+
+To use the card component in your main Sass file, you can import it using the @import rule:
+
+SCSS
+// main.scss
+@import "components/card";
+Use code with caution.
+
+This will include the styles from the card.scss file into your main stylesheet, allowing you to use the card class to apply the card styles to elements in your HTML.
+
+By using components, you can create a more modular and maintainable CSS structure, making it easier to manage and update your stylesheets.

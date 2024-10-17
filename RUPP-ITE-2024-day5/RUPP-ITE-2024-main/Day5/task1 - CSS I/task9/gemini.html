@@ -1,0 +1,53 @@
+Alignment Techniques
+Text Alignment:
+
+text-align: Used to align text within an element.
+left: Aligns text to the left.
+center: Centers text within the element.
+right: Aligns text to the right.
+justify: Justifies text, aligning both the left and right margins.
+Vertical Alignment:
+
+vertical-align: Used to align elements vertically within their parent container.
+top: Aligns the top of the element with the top of the container.
+middle: Centers the element vertically within the container.
+bottom: Aligns the bottom of the element with the bottom of the container.
+baseline: Aligns the baseline of the element with the baseline of the parent container.
+Display Properties
+block: Elements are displayed as blocks, taking up the full width of their parent container and starting on a new line.
+inline: Elements are displayed inline, without starting on a new line.
+inline-block: Elements are displayed as blocks, but without starting on a new line.
+flex: Elements are displayed as flex items, allowing for flexible layout and alignment.
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Alignment and Display Example</title>
+  <style>
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 200px;
+      width: 400px;
+      border: 1px solid black;
+    }
+
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: lightblue;
+      text-align: center;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box">Box 1</div>
+    <div class="box">Box 2</div>
+    <div class="box">Box 3</div>
+  </div>
+</body>
+</html>
